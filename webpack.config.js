@@ -5,14 +5,22 @@ module.exports = {
   entry: [
     './src/index'
   ],
+  output: {
+    path: __dirname,
+    publicPath: '/',
+    filename: 'bundle.js'
+  },
   module: {
-    loaders: [
-      { test: /\.js?$/, loader: 'babel', exclude: /node_modules/ },
-      { test: /\.s?css$/, loader: 'style!css!sass' },
-    ]
+    loaders: [{
+      exclude: /node_modules/,
+      loader: 'babel',
+      query: {
+        presets: ['react', 'es2015', 'stage-1']
+      }
+    }]
   },
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['', '.js', '.jsx']
   },
   output: {
     path: path.join(__dirname, '/dist'),
