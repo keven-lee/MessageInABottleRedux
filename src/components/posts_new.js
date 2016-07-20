@@ -43,10 +43,10 @@ class PostsNew extends Component {
         return ( < form onSubmit = {
                 handleSubmit(this.onSubmit.bind(this))
             } >
-            < h3 > Create a New Post < /h3> < div className = {
+            < h3 > Create a New Message < /h3> < div className = {
                 `form-group ${title.touched && title.invalid ? 'has-danger' : ''}`
             } >
-            < label > Title < /label> < input type = 'text'
+            < label > Message < /label> < input type = 'text'
             className = 'form-control' {...title
             }
             /> < div className = 'text-help' > {
@@ -56,7 +56,7 @@ class PostsNew extends Component {
             < div className = {
                 `form-group ${categories.touched && categories.invalid ? 'has-danger' : ''}`
             } >
-            < label > Categories < /label> < input type = 'text'
+            < label > Name < /label> < input type = 'text'
             className = 'form-control' {...categories
             }
             /> < div className = 'text-help' > {
@@ -66,7 +66,7 @@ class PostsNew extends Component {
             < div className = {
                 `form-group ${content.touched && content.invalid ? 'has-danger' : ''}`
             } >
-            < label > Content < /label> < textarea className = 'form-control' {...content
+            < label > Comments < /label> < textarea className = 'form-control' {...content
             }
             /> < div className = 'text-help' > {
                 content.touched ? content.error : ''
@@ -85,14 +85,14 @@ function validate(values) {
 
     if (!values.title) {
         //goes into title.error
-        errors.title = 'Enter a username';
+        errors.title = 'Enter a Message';
     }
     if (!values.categories) {
-        errors.categories = 'Enter categories';
+        errors.categories = 'Enter your name';
     }
     if (!values.content) {
         //goes into title.error
-        errors.content = 'Enter some content';
+        errors.content = 'Enter some comments';
     }
 
     return errors;

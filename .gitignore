@@ -1,7 +1,3 @@
-/node_modules
-bundle.js
-npm-debug.log
-
-# IntelliJ
-*.iml
-/.idea
+node_modules/
+*npm-debug.log
+*.DS_Store

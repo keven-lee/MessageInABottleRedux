@@ -6,9 +6,9 @@ import PostsIndex from './components/posts_index';
 import PostsNew from './components/posts_new';
 import PostsShow from './components/posts_show';
 
-const Greeting = () => {
-    return <div>Hey tehre!</div>;
-};
+//const Greeting = () => {
+//    return <div>Hey tehre!</div>;
+//};
 
 //   /       App
 //greet      App, Greeting

@@ -1,13 +1,13 @@
-html {}
-
 body {
-    background: #1e3c72;
+    background-color: #1e3c72 !important;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #1e3c72, #2a5298);
+    background-color: -webkit-linear-gradient(to left, #1e3c72, #2a5298) !important;
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(right, #1e3c72, #2a5298);
-    background: linear-gradient(to left, #1e3c72, #2a5298);
+    background-color: -webkit-linear-gradient(right, #1e3c72, #2a5298) !important;
+    background-color: linear-gradient(to left, #1e3c72, #2a5298) !important;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 0 !important;
+    color: #fff;
 }
 
 * {
@@ -57,13 +57,11 @@ h3 {
     padding-bottom: 50px;
     border-bottom: 15px dotted;
     margin-bottom: 50px;
-    color: rgba(255, 255, 255, 0.04);
 }
 
 p {
     border-bottom: 15px dotted;
     padding-bottom: 50px;
-    color: rgba(255, 255, 255, 0.04);
 }
 
 .form-control {

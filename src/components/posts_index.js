@@ -45,7 +45,7 @@ class PostsIndex extends Component {
             < div className = 'text-xs-right' >
             < Link to = '/posts/new'
             className = 'btn btn-primary' >
-            Add a Post < /Link> < /div> < ul className = 'list-group' > {
+            Add a Message < /Link> < /div> < ul className = 'list-group' > {
                 this.renderPosts()
             } < /ul> < /div>
         );
