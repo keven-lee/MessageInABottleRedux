@@ -8,5 +8,5 @@ Leave messages onto a digital Wedding Guest Book! Guests can sign in with their 
 * `npm start`
 * visit `http://localhost:8080/`
 
-Thanks to Alan for the bundler: 
+Thanks to Alan for the Heroku bundler: 
 https://github.com/alanbsmith
